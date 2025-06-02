@@ -1,0 +1,14 @@
+﻿<Window x:Class="PTRKApp.Loading.Loading"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PTRKApp.Loading"
+        mc:Ignorable="d"
+        Title="Loading" Height="450" Width="800">
+    <Grid>
+        <Image Source="/q4.png" Stretch="Fill"/>
+        <Frame x:Name="f2" NavigationUIVisibility="Hidden" Margin="120,0,0,0" />
+        <Image Source="/INNIttM.png" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,15,33,33"/>
+    </Grid>
+</Window>

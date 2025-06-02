@@ -1,0 +1,49 @@
+﻿<Page x:Class="PTRKApp.STR.Dop.Zapros"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PTRKApp.STR.Dop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Zapros">
+
+    <Grid Height="450" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Image Source="/q4.png" Stretch="Fill"/>
+        <DataGrid x:Name="SborTab" HorizontalContentAlignment="Stretch" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,43,0,0" Height="354" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="ФИО" Binding="{Binding FIO}"/>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}"/>
+                <DataGridTextColumn Header="Почта" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirdDate}"/>
+                <DataGridTextColumn Header="Специальность" Binding="{Binding Speciality}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" VerticalAlignment="Top" Background="#333" Height="20">
+            <Button x:Name="Button6" Padding="10,0" Click="Button6_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Поиск"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Excel" Padding="10,0" Click="Excel_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Отчет по пользователям"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button5" Padding="10,0" Click="Button5_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Назад"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0,20,0,0" TextWrapping="Wrap" Text="Введите текст для поиска" VerticalAlignment="Top" x:Name="SearchBox" Width="197"/>
+        <!--<StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button x:Name="Button5" Content="Назад" Margin="5" Height="30" Width="150" Click="Button5_Click" />     
+        </StackPanel>-->
+    </Grid>
+</Page>

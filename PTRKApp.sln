@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTRKApp", "PTRKApp\PTRKApp.csproj", "{629B10F1-827D-4ECB-A047-E36B1ED7B67D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{629B10F1-827D-4ECB-A047-E36B1ED7B67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{629B10F1-827D-4ECB-A047-E36B1ED7B67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{629B10F1-827D-4ECB-A047-E36B1ED7B67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{629B10F1-827D-4ECB-A047-E36B1ED7B67D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C6B6013-780D-4811-B976-6BF1BF9FA56D}
+	EndGlobalSection
+EndGlobal

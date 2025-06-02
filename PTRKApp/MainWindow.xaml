@@ -1,0 +1,16 @@
+﻿<Window x:Class="PTRKApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PTRKApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF323232">
+    <Grid >
+        <Image Source="/q4.png" Stretch="Fill"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="ЗАГРУЗКА..." FontSize="15"/>
+            <ProgressBar x:Name="Progress_load1" Height="20" Width="570" Margin="0,0,0,0" Minimum="0" Maximum="100"/>
+        </StackPanel>
+    </Grid>
+</Window>
