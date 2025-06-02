@@ -51,11 +51,11 @@ namespace PTRKApp.STR
             var DelSbor = SborTab.SelectedItems.Cast<group>().ToList();
             foreach (var dsbor in DelSbor)
             {
-                //if (context.uche_sbora.Any(x => x.id_uchet == dsbor.id_group))
-                //{
-                //    MessageBox.Show("Данные используются в таблице Справочная", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                //    return;
-                //}
+                if (context.Orders.Any(x => x.group.id_group == dsbor.id_group))
+                {
+                    MessageBox.Show("Данные используются в таблице Заказов", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
                 if (MessageBox.Show($"Удалить запись {dsbor.id_group}", "Удаление", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     var grForDel = context.group.FirstOrDefault(x => x.id_group == dsbor.id_group);
