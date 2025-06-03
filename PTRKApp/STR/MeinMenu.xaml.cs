@@ -28,9 +28,9 @@ namespace PTRKApp
         {
             InitializeComponent();
 
-            if (!UserSession.CurrentUser.Roles.IsAdmin)
+            if (UserSession.CurrentUser.Roles.Id != 1)
             {
-                Button7.Visibility = Visibility.Collapsed;
+                Button7.Visibility = Visibility.Hidden;
             }
         }
 
