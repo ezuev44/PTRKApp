@@ -28,6 +28,11 @@ namespace PTRKApp.STR
         public AddUser()
         {
             InitializeComponent();
+            if (UserSession.CurrentUser.Roles.Id != 1)
+            {
+                cbAdm.Visibility = Visibility.Hidden;
+                cbMod.Visibility = Visibility.Hidden;
+            }
         }
 
         private void Button6_Click(object sender, RoutedEventArgs e)
