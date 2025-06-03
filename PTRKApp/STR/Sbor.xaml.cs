@@ -44,6 +44,7 @@ namespace PTRKApp
             {
                 Button6.Visibility = Visibility.Collapsed;
                 Button3.Visibility = Visibility.Collapsed;
+                Button2.Visibility = Visibility.Collapsed;
             }
         }
 
